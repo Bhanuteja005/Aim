@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AIM MLRIT</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/AIM.jfif">
+    <!-- Libraries that are common across all pages -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-111097251-1');
+    </script>
+    <!--Bootstrap: according to official website, these are cached -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link type="text/css" href="/style.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <link rel="stylesheet" href="navbar.css">
+    <script src="navbar.js"></script>
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/mlrit.png" height="57">
+        </a>
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="modal" data-target="#sideNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Blog</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our
+                        Events <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <div class="dropdown-triangle"></div>
+                        <div class="sublinks">
+                            <li>
+                                <a class="dropdown-item" href="" >Immersive</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="" >Squid Game</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="" >Gen Ai</a>
+                            </li>
+                            <li class="img-list-item">
+                                <img src="/assets/participate.png" alt="this is a picture">
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="">Our Team </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="modal fade right" tabindex="-1" role="dialog" id="sideNav">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: #fff;">AIM MLRIT</h5>
+                    <button type="button" id="close-modal" class="close float-right txt-dark" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="nav-link nav-link-bold" href="/">Home</a>
+                    <a class="nav-link nav-link-disabled" href="#" style="color: #084880;">Our Events ></a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Immersive</a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Squid Game</a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Gen Ai</a>
+                    <a class="nav-link nav-link-bold" href="/sponsors.html">Blog</a>
+                    <a class="nav-link nav-link-bold" href="/team.html">Our Team</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="/css/page.css">
+    <style>
+        .main-head {
+            background: url("/assets/1.png");
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            height: 100%;
+            width: auto;
+        }
+        @media (max-width: 767px) {
+        .main-head {
+            height: 500px;
+            min-height: 50vh;
+        }
+
+        .container-fluid {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .header-textbox {
+            margin-top: 20%;
+            margin-left: 3%;
+            position: relative;
+            text-align: left;
+            color: white;
+        }
+
+        .header-textbox img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .header-text {
+            h1 {
+                margin-top: 35%;
+                font-size: 200%;
+            }
+
+            p {
+                margin-top: 8%;
+                font-size: 16px;
+            }
+        }
+    }
+    </style>
+
+    <header class="w-100 main-head">
+                    <div class="container-fluid ">
+                        <div class="header-textbox" >
+                            <div class="header-text">
+                                <h1 class="card-title" style="font-size: 450%; display: flex; font-style: Montserrat;"><b>AIM</b>  </h1>
+                                <p class="card-text">Aspiring Intellectual Mindsets</p>
+                                <p>Welcome to the forefront of innovation at MLRIT with AIM Club!</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+    </header>
+    
+    </div>
+    </div>
+    <div class="containermarketing" >
+        
+        <div class="row featurette">
+            
+            <div class="col-md-4">
+                <img src="assets/AIM.jfif" class="img img-fluid img-intro"  class="featurette-image img-fluid mx-auto" alt="Generic placeholder image" >
+            </div>
+            <div class="whitebox"  style="margin-top: 70px;">
+                <h2 class="featurette-heading">AIM CLUB </h2>
+                <br>
+                
+                <p>Welcome to Aim Club at MLRIT College, where the future meets innovation! Aim, short for Aspiring Intellectual Mindsets, is the dynamic AIML department club that explores the realms of artificial intelligence. In collaboration with Inlustroo Company, Aim Club pioneers cutting-edge projects and fosters a community of forward-thinkers. Our members have harnessed their skills to develop a remarkable robot, showcasing the potential of AI in the real world. Join us on this journey of discovery and advancement, where passion meets technology. Be part of Aim Club and embrace the limitless possibilities of AI. Together, we shape the future!</p>
+            </div>
+        </div>
+    </div>
+    <style>
+      .img {
+    margin-left: 10px;
+    width: 400px;
+    height: 340px;
+    margin-bottom: 10%;
+    border-radius: 1rem;
+}
+
+.containermarketing {
+    position: relative;
+    background-image: url('/assets/95735fe4d2a95507e907ed3ca194611e.png');
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-intro {
+    margin-top: 8rem;
+}
+
+.img-fluid {
+    margin-bottom: 20px;
+}
+
+.whitebox {
+    align-items: center;
+    position: absolute;
+    top: 58px;
+    left: 35%;
+    width: 762px;
+    height: 339px;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 1rem;
+}
+
+.whitebox, p {
+    font-size: 20px;
+}
+
+.featurette-heading {
+    font-stretch: extra-condensed;
+    margin-left: 280px;
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+}
+
+.feature {
+    margin-left: 150px;
+    color: #ffffff;
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+}
+
+@media screen and (max-width: 767px) {
+    .containermarketing {
+        height: 190%;
+    }
+    .whitebox {
+        position: static;
+        height: auto;
+        width: 350px;
+        margin-top: 50px;
+        margin-left: 7%;
+        border-radius: 1rem;
+        margin-bottom: 20%;
+    }
+
+    .img {
+        
+        margin-left: 35px;
+        margin-right: 25px;
+        width: 300px;
+        height: 300px;
+        border-radius: 1rem;
+    }
+
+    .featurette-heading {
+        margin-left: 0;
+        text-align: center;
+    }
+    .feature {
+        margin-left: 10px;
+    }
+}
+    </style>
+<div class="prize-page special-prize">
+        <div class="row prize-section">
+           <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="prize-box">
+                 <div class="special-image">
+                    <img src="/assets/immersive (2).jpeg" alt="" class="prize_img" style="border-radius: 1rem;  ">
+                 </div>
+                 <div class="image-dabba">
+                    <div>
+                       <h1>Immersive</h1>
+                    </div>
+                 </div>
+                 <div class="prize-number">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam quod officia ab.
+                 </div>
+                 
+              </div>
+           </div>
+           <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="prize-box">
+                 <div class="special-image special-imagep">
+                    <img src="/assets/squid game.jpeg" alt="" class="prize_logop" style="border-radius: 1rem;">
+                 </div>
+                 <div class="image-dabba">
+                    <div>
+                       <h1>Squid Game</h1>
+                    </div>
+                 </div>
+                 <div class="prize-number" style="font-size: 20px !important;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam quod officia ab.
+                 </div> 
+              </div>
+           </div>
+           <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="prize-box">
+                 <div class="special-image special-imagep">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-ac5e0c279d389c4d7b0989b2f9239dbe-lq" alt="" class="prize_logop" style="border-radius: 1rem;">
+                 </div>
+                 <div class="image-dabba">
+                    <div class="new">
+                       <h1>Gen Ai</h1>
+                    </div>
+                 </div>
+                 <div class="prize-number">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam quod officia ab.
+                 </div>
+                
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  <footer>
+  <div class="container-fluid  text-white push-bottom p-5">
+    <div class="container" id="footer-image">
+        <div class="row text-left">
+            <div class="col-12 col-md-3 push-upper text-left">
+                <img class="img-responsive" src="/assets/AIM.jfif" alt="AIM Logo" />
+
+                <p class="mx-auto footer-text">
+                    Visit our blog : .>>>>>>>>>>>>>>>>>>>>
+                </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 push-upper">
+                <h3>About</h3>
+                <a class="d-block footer-text" href="">Our Team</a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 push-upper">
+                <h3>Events</h3>
+                <a class="d-block footer-text" href="">Hackathons</a>
+                <a class="d-block footer-text" href="">Bootcamps</a>
+            </div>
+            <div class="col-12 col-md-3 push-upper">
+                <h3>Reach Us</h3>
+                <span class="footer-text">AIM,MLRIT</span><br>
+                <span class="footer-text">Dundigal,</span><br>
+                <span class="footer-text">Hyderabad</span><br>
+                <a href="tel:">xxxxxxxxx</a>, <a href="tel:">xxxxxxxxx</a><br>
+                <a href="mailto:mlrit.ac.in">mlrit.ac.in</a>
+            </div>
+        </div>
+        <div class="row social-links">
+            <div class="col-12 text-center">
+                <ul class="list-inline pt-3">
+                    <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-facebook"></i></h1></a></li>
+                    <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-instagram"></i></h1></a></li>
+                    <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-twitter"></i></h1></a></li>
+                    <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-github"></i></h1></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+</body>
+
+</html>

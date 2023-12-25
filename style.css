@@ -1,0 +1,529 @@
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #07071c;
+}
+
+.container-fluid {
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+
+.header-textbox {
+    margin-top: 10%;
+    margin-left: 5%;
+    font-stretch: ultra-condensed;
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.header-textbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Media query for tablets and larger devices */
+@media (min-width: 768px) {
+    .header-textbox {
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .header-textbox {
+        max-width: 800px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.para {
+    max-width: 90vw;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+    width: 80%;
+}
+
+.image {
+    box-sizing: border-box;
+    z-index: 2;
+    border-radius: 3px;
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+
+.stats-display {
+    position: absolute;
+}
+
+.image-right,
+.para-right,
+.tile-row-right {
+    float: right;
+}
+
+.image-left,
+.para-left {
+    float: left;
+}
+
+.para-head {
+    font-weight: bold;
+    margin-bottom: 1.2rem !important;
+    color: #002142;
+    font-family: "CustomHeading", sans-serif;
+}
+
+.row-startup .para-head {
+    color: white;
+}
+
+.para-text {
+    text-align: justify;
+    margin-top: 1.2rem !important;
+    margin-bottom: 1.2rem !important;
+}
+
+.cta-btn {
+    padding: 10px 60px;
+    border-radius: 1.5rem;
+    margin-top: 1.2rem !important;
+    color: white;
+}
+
+.cta-btn:hover {
+    color: white;
+}
+
+.row-fail .cta-btn-container {
+    text-align: right;
+}
+
+
+@media (max-width: 768px) {
+    .para {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .para-head {
+        text-align: center;
+        margin-top: 0 !important;
+    }
+
+    .cta-btn {
+        margin: 1.2rem auto 3rem calc($spacer * 3) !important;
+    }
+
+    .image-left,
+    .image-right {
+        float: none;
+    }
+
+    .image {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .image img {
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+
+    .row.tile-row {
+        padding: 1rem;
+    }
+
+    .para-text {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .cta-btn-container {
+        text-align: center !important;
+    }
+}
+
+.stats-display-startup {
+    width: fit-content;
+    right: 3%;
+    bottom: -13%;
+    color: #185a9d;
+}
+
+.row-megathon {
+    background-color: rgba(40, 205, 193, 0.47);
+}
+
+
+.row-fail {
+    margin-top: calc(2rem + 4%);
+    margin-bottom: 7rem;
+}
+
+
+
+#testimonial-parent {
+
+    margin-top: 8rem;
+
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.testimonial-container {
+    background-color: white;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 2rem;
+    height: inherit;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: absolute;
+    top: 6rem;
+
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .testimonial-container {
+        position: absolute;
+        top: 3rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .testimonial-container {
+        position: absolute;
+        top: -3rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .testimonial-container {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    #testimonial-parent {
+        margin: 2rem 0;
+    }
+
+    .image-right,
+    .para-right,
+    .tile-row-right {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.testimonial-container .profilepic {
+    width: 100%;
+    height: 75px;
+    text-align: center;
+}
+
+.testimonial-container .profilepic img {
+    height: 100%;
+}
+
+.testimonial-container .person-info>div,
+.testimonial-container .text {
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    height: 100%;
+    background-color: white;
+}
+
+.person-info {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.testimonial-container .text {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .testimonial-container .text {
+        font-size: 1.25rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 85%;
+    }
+
+    .carousel-inner {
+        width: 95%;
+    }
+}
+
+.testimonial-container .person-info .name,
+.testimonial-container .person-info .designation {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.palette-bg-green {
+    background-color: #1bbfb3;
+}
+
+.palette-bg-green:hover {
+    background-color: #4db6ac;
+}
+
+.txt-green {
+    color: #1bbfb3;
+}
+
+.palette-bg-red {
+    background-color: #d43129;
+}
+
+.palette-bg-red:hover {
+    background-color: #dd5e58;
+}
+
+.palette-bg-blue {
+    background-color: #002240;
+}
+
+.palette-bg-blue:hover {
+    background-color: #084880;
+}
+
+.palette-bg-grey {
+    background-color: #ebebeb;
+}
+
+.contact-us {
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)),
+        url("/assets/imgs/undraw-world.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: calc(100% + 9rem);
+
+    background-position-y: -9rem;
+    margin-top: 0;
+}
+
+.contact-us .backbox {
+
+    background-color: rgba(0, 34, 64, 0.637);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0rem auto;
+
+    color: white;
+}
+
+.prize-section {
+	margin: 12.5% 0;
+}
+
+.prize1-box {
+	background: linear-gradient(105.95deg, rgba(255, 255, 255, 0.25) 4.09%, rgba(255, 255, 255, 0) 129.28%);
+	backdrop-filter: blur(80px);
+	border-radius: 16px;
+	height: 300px;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 1);
+	margin-bottom: 80px;
+	transition-duration: 0.6s;
+	color: white;
+}
+
+.prize-box {
+	background: linear-gradient(105.95deg, rgba(255, 255, 255, 0.25) 4.09%, rgba(255, 255, 255, 0) 129.28%);
+	/* background-color: rgba(255, 255, 255, 0.25); */
+	backdrop-filter: blur(80px);
+	border-radius: 16px;
+	height: 400px;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 1);
+	margin-bottom: 80px;
+	transition-duration: 0.6s;
+}
+
+.prizes_title {
+	text-transform: capitalize;
+	font-feature-settings: 'pnum' on, 'onum' on;
+	color: #F0F0F0;
+	text-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25);
+}
+
+.prize_logo {
+	margin-top: -3rem !important;
+	width: 40%;
+}
+
+.prize_img {
+	margin-top: -1.5rem !important;
+	width: 40%;
+}
+
+.prize_imgp {
+	margin-top: -2rem !important;
+	width: 50%;
+}
+
+.prize_logop {
+	margin-top: -3.5rem !important;
+	width: 50%;
+}
+
+.special-image {
+	margin-left: 10%;
+}
+
+.special-imagep {
+	margin-left: 6%;
+}
+
+.special-prize .prize-box {
+	max-width: 400px;
+	padding: 0 0.5rem;
+	margin-bottom: 90px;
+}
+
+.prize-page {
+	margin: 0 auto;
+}
+
+.prize1-number {
+	text-align: center;
+	font-size: 29px !important;
+	font-weight: 600;
+	color: white;
+}
+
+.prize-number {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+	color: white;
+}
+
+.special-prize .prize-number {
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 1rem;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.girls {
+	font-size: 28px;
+}
+
+.image-ka-text {
+	position: relative;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 50px;
+}
+
+.polulu-prize {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.prize-name {
+	font-size: 20px;
+	font-weight: 400;
+	color: rgba(229, 220, 220, 0.9);
+}
+
+.prize-ka-image {
+	max-width: 100%;
+}
+
+.prize-section .col-lg-4.col-md-6.col-sm-12 {
+	margin: 0 auto;
+}
+.image-dabba div h1 {
+    /* font-size: 2.5rem; */
+    width: 100%;
+    text-align: center;
+    background: -webkit-linear-gradient(0deg, rgba(151, 70, 158, 1) 20%, rgba(193, 70, 164, 1) 40%, rgba(239, 72, 156, 1) 60%, rgba(255, 106, 72, 1) 80%, rgba(247, 151, 55, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+}
