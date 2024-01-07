@@ -1,0 +1,452 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AIM MLRIT</title>
+        <link rel="shortcut icon" type="image/png" href="/assets/AIM.jfif">
+        <!-- Libraries that are common across all pages -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"></script>
+        <!--Bootstrap: according to official website, these are cached -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <link type="text/css" href="/style.css" rel="stylesheet" />
+        
+    </head>
+<body>
+    <link rel="stylesheet" href="navbar.css">
+    <script src="navbar.js"></script>
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/mlrit.png" height="57">
+        </a>
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="modal" data-target="#sideNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Blog</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our
+                        Events <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <div class="dropdown-triangle"></div>
+                        <div class="sublinks">
+                            <li>
+                                <a class="dropdown-item" href="/immersive.html" >Immersive</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/squid.html" >Squid Game</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="" >Gen Ai</a>
+                            </li>
+                            <li class="img-list-item">
+                                <img src="/assets/participate.png" alt="this is a picture">
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Gallery</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="team.html">Our Team </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="modal fade right" tabindex="-1" role="dialog" id="sideNav">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: #fff;">AIM MLRIT</h5>
+                    <button type="button" id="close-modal" class="close float-right txt-dark" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="nav-link nav-link-bold" href="index.html">Home</a>
+                    <a class="nav-link nav-link-disabled" href="" style="color: #084880;">Our Events ></a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Immersive</a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Squid Game</a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Gen Ai</a>
+                    <a class="nav-link nav-link-bold" href="">Blog</a>
+                    <a class="nav-link nav-link-bold" href="">Gallery</a>
+                    <a class="nav-link nav-link-bold" href="team.html">Our Team</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="/css/page.css">
+    <style>
+        .main-head {
+            background: url("/assets/metaverse_source_1-removebg-preview\ 1.png");
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            width: 45px;
+            height: 700px;
+            margin-top: auto;
+
+        }
+        .cards-texts {
+            color: #ffffff;
+            font-size: 41px;
+        }
+        @media (max-width: 767px) {
+        .main-head {
+            height: 500px;
+            min-height: 50vh;
+        }
+
+        .containers-fluids {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .headers-textboxs {
+            margin-top: 20%;
+
+            position: relative;
+            font-weight: 800;
+            text-align: right;
+            margin-right: 50px;
+            color: #B21414;
+        }
+
+        .headers-textboxs img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .headers-texts {
+            h1 {
+                margin-top: 35%;
+                font-size: 200%;
+                font-weight: 800;
+                
+            }
+            p {
+                margin-top: 8%;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+    </style>
+    <header class="w-100 main-head">
+                    <div class="containers-fluids ">
+                        <div class="headers-textboxs" >
+                            <div class="headers-texts1" style="margin-top: 190px;">
+                                <h1 class="cards-title" style="color: #1467B2; font-size: 450%; text-shadow: #000000; font-weight: 750; text-align: left; margin-left: 40px; font-style: Montserrat;">AIM CLUB </h1>
+                                <h1 style="color: #1467B2; font-weight: 800; text-shadow: #000000; text-align: left;margin-left: 40px;"><b>IMMERSIVE</b></h1>
+                                <h1 style="color:#1467B2; text-shadow: #000000; font-weight: 800; text-align: left;margin-left: 40px;">2021.</h1>
+                                <p class="card-text" style=" text-shadow: #000000; color: #ffffff; margin-left: 40px;font-family: Montserrat;
+                                font-size: 41px;
+                                font-weight: 600;
+                                margin-top: 30px;
+                                line-height:25px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                ">Our team of AIM CLUB conducted event on </p>
+                                <p style="color: #ffffff;font-family: Montserrat;
+                                font-size: 41px;
+                                font-weight: 600;
+                                margin-left: 40px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                ">2021.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+<div class="bhanu">
+    <div class="damu1">
+        <img src="assets/des.png"  style="width:200px;
+        height: 600px;
+        float: left;
+        margin-top: -150px;" alt="" />
+    </div>
+
+    <div class="container-b">
+        <div class="title-bhan"  style="color: #1467B2;"><h1><b>What is Immersive ?</b></h1></div>
+        <div class="text-b">info about Immersive</div>
+        <div class="dema">
+            <hr width="500px;" color="blue"
+        size="10">
+        <p style="color: #fff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima odio recusandae sit ducimus esse culpa
+        tempore veritatis omnis facilis laudantium! Exercitationem saepe eos provident eaque maxime fuga architecto
+        laudantium eius?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius totam vero, laudantium, quae
+        corporis laborum dolores ea dolor ut atque cupiditate maiores quis aliquid. Mollitia facere harum veritatis.
+        Nesciunt, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, aliquid et perferendis
+        illum consequuntur quae facilis! Cupiditate dicta expedita laudantium molestias eaque architecto aliquam
+        odit, a illum hic officiis tenetur!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+        delectus doloribus.</p>
+        <hr width="500px;" color="blue"
+        size="10">
+
+        </div>
+    </div>
+    <div class="damu2">
+        <img src="assets/des2.png"  style="width: 250px;
+        height: 600px;
+        top: 1757px;
+        float: left;
+        margin-top: -100px;
+        " alt="" />
+    </div>
+    <div class="winners">
+        <h1 style="color: #B21414; margin-top: 200px;font-family: Montserrat;
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 80px;
+        letter-spacing: 0em;
+        text-align:left; margin-left: 25%;
+        ">Winner’s of Immersive 2021.</h1>
+        <div class="win-image">
+            <div><img src="/assets/Rectangle 273.png" alt=""></div>
+            <div><img src="/assets/Rectangle 273.png" alt=""></div>
+            <div><img src="/assets/Rectangle 273.png" alt=""></div>
+            <div><img src="" alt=""></div>
+        </div>
+
+    </div>
+</div>
+</header>
+    <div>
+        <a href="" onclick="onscroll()" id="jump" class="hiddenJumpIcon">
+          <i class="fa fa-chevron-up" id="jumpicon"></i>
+        </a>
+      </div>
+      <script>
+        function throttle(func, time) {
+       var timeout, hadCalledInBetween;
+    
+        return function() {
+            if (!timeout) {
+                func.apply(this, arguments);
+    
+                timeout = setTimeout(function() {
+                    if (hadCalledInBetween) {
+                        func.apply(this, arguments);
+                        hadCalledInBetween = false;
+                    }
+                    timeout = null;
+                }, time);
+            } else {
+                hadCalledInBetween = true;
+            }
+        };
+    }
+    
+    
+    
+    window.onload = function(){
+    const $win = $(window),
+        $jump = $(document.getElementById("jump")),
+        $jumpicon = $(document.getElementById("jumpicon")),
+        coverPageHeight = window.outerHeight + 100;
+    
+    function checkScroll() {
+        var hiddenClass = "hiddenJumpIcon",
+            scrollTop = $win.scrollTop();
+    
+        if (scrollTop > coverPageHeight) {
+            $jump.removeClass(hiddenClass);
+            $jumpicon.removeClass(hiddenClass);
+        } else {
+            $jump.addClass(hiddenClass);
+            $jumpicon.addClass(hiddenClass);
+        }
+    }
+    
+    $jump.click(function() {
+        $("body, html").animate({
+            scrollTop: 0
+        }, 500);
+    });
+    
+    checkScroll();
+    $win.on("scroll load resize", throttle( checkScroll, 100));
+    };
+    </script>
+
+      <footer>
+      <div class="container-fluid  text-white push-bottom p-5">
+        <div class="container" id="footer-image">
+            <div class="row text-left">
+                <div class="col-12 col-md-3 push-upper text-left">
+                    <img class="img-responsive" src="/assets/AIM.jfif" alt="AIM Logo" />
+    
+                    <p class="mx-auto footer-text">
+                        Visit our blog : .>>>>>>>>>>>>>>>>>>>>
+                    </p>
+                </div>
+    
+                <div class="col-12 col-sm-6 col-md-3 push-upper">
+                    <h3>About</h3>
+                    <a class="d-block footer-text" href="">Our Team</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 push-upper">
+                    <h3>Events</h3>
+                    <a class="d-block footer-text" href="">Hackathons</a>
+                    <a class="d-block footer-text" href="">Bootcamps</a>
+                </div>
+                <div class="col-12 col-md-3 push-upper">
+                    <h3>Reach Us</h3>
+                    <span class="footer-text">AIM,MLRIT</span><br>
+                    <span class="footer-text">Dundigal,</span><br>
+                    <span class="footer-text">Hyderabad</span><br>
+                    <a href="tel:">xxxxxxxxx</a>, <a href="tel:">xxxxxxxxx</a><br>
+                    <a href="mailto:mlrit.ac.in">mlrit.ac.in</a>
+                </div>
+            </div>
+            <div class="row social-links">
+                <div class="col-12 text-center">
+                    <ul class="list-inline pt-3">
+                        <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-facebook"></i></h1></a></li>
+                        <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-instagram"></i></h1></a></li>
+                        <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-twitter"></i></h1></a></li>
+                        <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-github"></i></h1></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script>
+        $(document).ready(init);
+    
+    function shouldManageDropdown() {
+        return window.innerWidth >= 1000;
+    }
+    
+    function windowSizeAwareDropdownFn(fn) {
+        return function() {
+            if (!shouldManageDropdown()) return true;
+            fn();
+        };
+    }
+    
+    function manageDropdowns() {
+        var dropdowns = document.querySelectorAll(
+                "#navbarSupportedContent ul li.dropdown"
+            ),
+            fadeInOutOptions = {
+                duration: 150
+            };
+    
+        dropdowns.forEach(function(dropdown) {
+            var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
+                dropdownMenu = dropdown.querySelector(".dropdown-menu"),
+                doNotFadeOutYet = true,
+                dropdownRemainAwakeTimeout = 50;
+    
+            function fadeOutDropdown() {
+                if (doNotFadeOutYet) return;
+                $(dropdownMenu).slideUp(fadeInOutOptions);
+            }
+    
+            $(toggleBtn).on(
+                "mouseenter",
+                windowSizeAwareDropdownFn(function() {
+                    doNotFadeOutYet = true;
+                    $(dropdownMenu).slideDown(fadeInOutOptions);
+                })
+            );
+    
+            $(toggleBtn).on(
+                "mouseover",
+                windowSizeAwareDropdownFn(function() {
+                    doNotFadeOutYet = true;
+                })
+            );
+    
+            $(toggleBtn).on(
+                "mouseleave",
+                windowSizeAwareDropdownFn(function() {
+                    doNotFadeOutYet = false;
+                    setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+                })
+            );
+    
+            $(dropdownMenu).on(
+                "mouseenter",
+                windowSizeAwareDropdownFn(function() {
+                    doNotFadeOutYet = true;
+                })
+            );
+    
+            $(dropdownMenu).on(
+                "mouseleave",
+                windowSizeAwareDropdownFn(function() {
+                    doNotFadeOutYet = false;
+                    setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+                })
+            );
+        });
+    }
+    
+    function manageCurves() {
+        /*
+         * if header is defined, then manage navbar curves on scroll otherwise just display them
+         *
+         * !IMPORTANT: i'm assuming that <header> will only be used to define the whole header image part
+         *              and nothing else in this whole website
+         */
+    
+        let $navbar = $("#navbar");
+    
+        if ($("header").length) {
+            $(document).on("scroll", function() {
+                if ($(document).scrollTop() > 25) {
+                    $navbar.addClass("navbar-curves");
+                } else {
+                    $navbar.removeClass("navbar-curves");
+                }
+            });
+        } else {
+            $navbar.addClass("navbar-curves");
+        }
+    }
+    
+    function init() {
+        manageDropdowns();
+        manageCurves();
+    }
+    
+    window.onresize = function() {
+        if ($(window).width() > 992) {
+            $("#sideNav").modal("hide");
+        }
+    };
+    
+    </script>
+</body>
+</html>

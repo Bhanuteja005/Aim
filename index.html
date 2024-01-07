@@ -9,12 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="/assets/AIM.jfif">
     <!-- Libraries that are common across all pages -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-111097251-1');
-    </script>
+
     <!--Bootstrap: according to official website, these are cached -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -42,6 +37,7 @@
         <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="modal" data-target="#sideNav">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
@@ -57,10 +53,10 @@
                         <div class="dropdown-triangle"></div>
                         <div class="sublinks">
                             <li>
-                                <a class="dropdown-item" href="" >Immersive</a>
+                                <a class="dropdown-item" href="immersive.html" >Immersive</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="" >Squid Game</a>
+                                <a class="dropdown-item" href="squid.html" >Squid Game</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="" >Gen Ai</a>
@@ -71,8 +67,11 @@
                         </div>
                     </ul>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Gallery</a>
+                </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="">Our Team </a>
+                    <a class="nav-link" href="team.html">Our Team </a>
                 </li>
             </ul>
         </div>
@@ -91,18 +90,20 @@
                     <a class="nav-link nav-link-bold" href="/">Home</a>
                     <a class="nav-link nav-link-disabled" href="#" style="color: #084880;">Our Events ></a>
                     <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Immersive</a>
-                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Squid Game</a>
+                    <a class="dropdown-item nav-sublink" href="squid.html" style="color: #fff;">Squid Game</a>
                     <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Gen Ai</a>
-                    <a class="nav-link nav-link-bold" href="/sponsors.html">Blog</a>
-                    <a class="nav-link nav-link-bold" href="/team.html">Our Team</a>
+                    <a class="nav-link nav-link-bold" href="">Blog</a>
+                    <a class="nav-link nav-link-bold" href="">Gallery</a>
+                    <a class="nav-link nav-link-bold" href="team.html">Our Team</a>
                 </div>
             </div>
         </div>
     </div>
-    <link rel="stylesheet" type="text/css" href="/css/page.css">
+
     <style>
         .main-head {
             background: url("/assets/1.png");
+            margin-top: 40px;
             position: relative;
             background-position: center;
             background-repeat: no-repeat;
@@ -160,9 +161,15 @@
                     <div class="container-fluid ">
                         <div class="header-textbox" >
                             <div class="header-text">
-                                <h1 class="card-title" style="font-size: 450%; display: flex; font-style: Montserrat;"><b>AIM</b>  </h1>
-                                <p class="card-text">Aspiring Intellectual Mindsets</p>
-                                <p>Welcome to the forefront of innovation at MLRIT with AIM Club!</p>
+                                <h1 class="card-title" style=" font-family: Montserrat;
+                                font-size: 96px;
+                                font-weight: 800;
+                                margin-top: 20%;
+                                line-height: 44px;
+                                letter-spacing: 0em;
+                                text-align: left;">AIM</h1>
+                                <p class="card-text" style="line-height: 50px; font-size: 35px;">Aspiring Intellectual Mindsets</p>
+                                <p style="line-height: 100px;">Welcome to the forefront of innovation at MLRIT with AIM Club!</p>
                                 
                             </div>
                         </div>
@@ -179,7 +186,7 @@
                 <img src="assets/AIM.jfif" class="img img-fluid img-intro"  class="featurette-image img-fluid mx-auto" alt="Generic placeholder image" >
             </div>
             <div class="whitebox"  style="margin-top: 70px;">
-                <h2 class="featurette-heading">AIM CLUB </h2>
+                <h2 class="featurette-heading" style="font-weight: 800;">AIM CLUB </h2>
                 <br>
                 
                 <p>Welcome to Aim Club at MLRIT College, where the future meets innovation! Aim, short for Aspiring Intellectual Mindsets, is the dynamic AIML department club that explores the realms of artificial intelligence. In collaboration with Inlustroo Company, Aim Club pioneers cutting-edge projects and fosters a community of forward-thinkers. Our members have harnessed their skills to develop a remarkable robot, showcasing the potential of AI in the real world. Join us on this journey of discovery and advancement, where passion meets technology. Be part of Aim Club and embrace the limitless possibilities of AI. Together, we shape the future!</p>
@@ -221,7 +228,7 @@
     width: 762px;
     height: 339px;
     background-color: white;
-    opacity: 0.7;
+    opacity: 0.8;
     border-radius: 1rem;
 }
 
@@ -250,23 +257,24 @@
 
 @media screen and (max-width: 767px) {
     .containermarketing {
-        height: 190%;
+        height: 150%;
     }
     .whitebox {
         position: static;
         height: auto;
-        width: 350px;
-        margin-top: 50px;
-        margin-left: 7%;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
         border-radius: 1rem;
-        margin-bottom: 20%;
-    }
+        margin-bottom: 10%;
+}
 
     .img {
         
         margin-left: 35px;
         margin-right: 25px;
-        width: 300px;
+        width: 330px;
         height: 300px;
         border-radius: 1rem;
     }
@@ -280,58 +288,63 @@
     }
 }
     </style>
-<div class="prize-page special-prize">
-        <div class="row prize-section">
-           <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="prize-box">
-                 <div class="special-image">
-                    <img src="/assets/immersive (2).jpeg" alt="" class="prize_img" style="border-radius: 1rem;  ">
-                 </div>
-                 <div class="image-dabba">
-                    <div>
-                       <h1>Immersive</h1>
-                    </div>
-                 </div>
-                 <div class="prize-number">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam quod officia ab.
-                 </div>
-                 
-              </div>
-           </div>
-           <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="prize-box">
-                 <div class="special-image special-imagep">
-                    <img src="/assets/squid game.jpeg" alt="" class="prize_logop" style="border-radius: 1rem;">
-                 </div>
-                 <div class="image-dabba">
-                    <div>
-                       <h1>Squid Game</h1>
-                    </div>
-                 </div>
-                 <div class="prize-number" style="font-size: 20px !important;">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam quod officia ab.
-                 </div> 
-              </div>
-           </div>
-           <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="prize-box">
-                 <div class="special-image special-imagep">
-                    <img src="https://qph.cf2.quoracdn.net/main-qimg-ac5e0c279d389c4d7b0989b2f9239dbe-lq" alt="" class="prize_logop" style="border-radius: 1rem;">
-                 </div>
-                 <div class="image-dabba">
-                    <div class="new">
-                       <h1>Gen Ai</h1>
-                    </div>
-                 </div>
-                 <div class="prize-number">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem numquam quod officia ab.
-                 </div>
-                
-              </div>
-           </div>
-        </div>
-     </div>
+  <div>
+    <a href="" onclick="onscroll()" id="jump" class="hiddenJumpIcon">
+      <i class="fa fa-chevron-up" id="jumpicon"></i>
+    </a>
   </div>
+  <script>
+    function throttle(func, time) {
+   var timeout, hadCalledInBetween;
+
+    return function() {
+        if (!timeout) {
+            func.apply(this, arguments);
+
+            timeout = setTimeout(function() {
+                if (hadCalledInBetween) {
+                    func.apply(this, arguments);
+                    hadCalledInBetween = false;
+                }
+                timeout = null;
+            }, time);
+        } else {
+            hadCalledInBetween = true;
+        }
+    };
+}
+
+
+
+window.onload = function(){
+const $win = $(window),
+    $jump = $(document.getElementById("jump")),
+    $jumpicon = $(document.getElementById("jumpicon")),
+    coverPageHeight = window.outerHeight + 100;
+
+function checkScroll() {
+    var hiddenClass = "hiddenJumpIcon",
+        scrollTop = $win.scrollTop();
+
+    if (scrollTop > coverPageHeight) {
+        $jump.removeClass(hiddenClass);
+        $jumpicon.removeClass(hiddenClass);
+    } else {
+        $jump.addClass(hiddenClass);
+        $jumpicon.addClass(hiddenClass);
+    }
+}
+
+$jump.click(function() {
+    $("body, html").animate({
+        scrollTop: 0
+    }, 500);
+});
+
+checkScroll();
+$win.on("scroll load resize", throttle( checkScroll, 100));
+};
+</script>
   <footer>
   <div class="container-fluid  text-white push-bottom p-5">
     <div class="container" id="footer-image">
@@ -375,7 +388,114 @@
     </div>
 </div>
 </footer>
+<script>
+    $(document).ready(init);
 
+function shouldManageDropdown() {
+    return window.innerWidth >= 1000;
+}
+
+function windowSizeAwareDropdownFn(fn) {
+    return function() {
+        if (!shouldManageDropdown()) return true;
+        fn();
+    };
+}
+
+function manageDropdowns() {
+    var dropdowns = document.querySelectorAll(
+            "#navbarSupportedContent ul li.dropdown"
+        ),
+        fadeInOutOptions = {
+            duration: 150
+        };
+
+    dropdowns.forEach(function(dropdown) {
+        var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
+            dropdownMenu = dropdown.querySelector(".dropdown-menu"),
+            doNotFadeOutYet = true,
+            dropdownRemainAwakeTimeout = 50;
+
+        function fadeOutDropdown() {
+            if (doNotFadeOutYet) return;
+            $(dropdownMenu).slideUp(fadeInOutOptions);
+        }
+
+        $(toggleBtn).on(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+                $(dropdownMenu).slideDown(fadeInOutOptions);
+            })
+        );
+
+        $(toggleBtn).on(
+            "mouseover",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+            })
+        );
+
+        $(toggleBtn).on(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = false;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+            })
+        );
+
+        $(dropdownMenu).on(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+            })
+        );
+
+        $(dropdownMenu).on(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = false;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+            })
+        );
+    });
+}
+
+function manageCurves() {
+    /*
+     * if header is defined, then manage navbar curves on scroll otherwise just display them
+     *
+     * !IMPORTANT: i'm assuming that <header> will only be used to define the whole header image part
+     *              and nothing else in this whole website
+     */
+
+    let $navbar = $("#navbar");
+
+    if ($("header").length) {
+        $(document).on("scroll", function() {
+            if ($(document).scrollTop() > 25) {
+                $navbar.addClass("navbar-curves");
+            } else {
+                $navbar.removeClass("navbar-curves");
+            }
+        });
+    } else {
+        $navbar.addClass("navbar-curves");
+    }
+}
+
+function init() {
+    manageDropdowns();
+    manageCurves();
+}
+
+window.onresize = function() {
+    if ($(window).width() > 992) {
+        $("#sideNav").modal("hide");
+    }
+};
+
+</script>
 </body>
 
 </html>
