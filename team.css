@@ -1,5 +1,7 @@
 @import url("fonts.css");
-
+.body {
+    background-color: #ffffff;
+}
 .main-head {
     position: relative;
     background: url("../assets/imgs/team.svg");

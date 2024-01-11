@@ -1,152 +1,105 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>AIM MLRIT</title>
-    <link rel="shortcut icon" type="image/png" href="/assets/AIM.jfif" />
-    <!-- Libraries that are common across all pages -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"
-    ></script>
-    <!--Bootstrap: according to official website, these are cached -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link type="text/css" href="/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <link rel="stylesheet" href="navbar.css" />
-    <script src="navbar.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AIM MLRIT</title>
+        <link rel="shortcut icon" type="image/png" href="/assets/AIM.jfif">
+        <!-- Libraries that are common across all pages -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"></script>
+    
+        <!--Bootstrap: according to official website, these are cached -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body style="background-color: #000000;">
+
+    <link rel="stylesheet" href="navbar.css">
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/mlrit.png" height="57" />
-      </a>
-      <button
-        class="navbar-toggler"
-        id="navbar-toggler"
-        type="button"
-        data-toggle="modal"
-        data-target="#sideNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Blog</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              href=""
-              class="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Our Events <span class="caret"></span
-            ></a>
-            <ul class="dropdown-menu">
-              <div class="dropdown-triangle"></div>
-              <div class="sublinks">
-                <li>
-                  <a class="dropdown-item" href="immersive.html">Immersive</a>
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/mlrit.png" height="57">
+        </a>
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="modal" data-target="#sideNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="squid.html">Squid Game</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">About Us</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="">Gen Ai</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Blog</a>
                 </li>
-                <li class="img-list-item">
-                  <img src="/assets/participate.png" alt="this is a picture" />
+                <li class="nav-item dropdown ">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our
+                        Events <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <div class="dropdown-triangle"></div>
+                        <div class="sublinks">
+                            <li>
+                                <a class="dropdown-item" href="immersive.html" >Immersive</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="squid.html" >Squid Game</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="" >Gen Ai</a>
+                            </li>
+                            <li class="img-list-item">
+                                <img src="/assets/participate.png" alt="this is a picture">
+                            </li>
+                        </div>
+                    </ul>
                 </li>
-              </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="team.html">Our Team </a>
+                </li>
             </ul>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="team.html">Our Team </a>
-          </li>
-        </ul>
-      </div>
+        </div>
     </nav>
     <div class="modal fade right" tabindex="-1" role="dialog" id="sideNav">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5
-              class="modal-title"
-              id="exampleModalLongTitle"
-              style="color: #fff"
-            >
-              AIM MLRIT
-            </h5>
-            <button
-              type="button"
-              id="close-modal"
-              class="close float-right txt-dark"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <a class="nav-link nav-link-bold" href="index.html">Home</a>
-            <a class="nav-link nav-link-disabled" href="" style="color: #084880"
-              >Our Events ></a
-            >
-            <a class="dropdown-item nav-sublink" href="" style="color: #fff"
-              >Immersive</a
-            >
-            <a class="dropdown-item nav-sublink" href="" style="color: #fff"
-              >Squid Game</a
-            >
-            <a class="dropdown-item nav-sublink" href="" style="color: #fff"
-              >Gen Ai</a
-            >
-            <a class="nav-link nav-link-bold" href="">Blog</a>
-            <a class="nav-link nav-link-bold" href="">Gallery</a>
-            <a class="nav-link nav-link-bold" href="team.html">Our Team</a>
-          </div>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: #fff;">AIM MLRIT</h5>
+                    <button type="button" id="close-modal" class="close float-right txt-dark" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="nav-link nav-link-bold" href="/">Home</a>
+                    <a class="nav-link nav-link-bold" href="/">About Us</a>
+                    <a class="nav-link nav-link-disabled" href="#" style="color: #084880;">Our Events ></a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Immersive</a>
+                    <a class="dropdown-item nav-sublink" href="squid.html" style="color: #fff;">Squid Game</a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Gen Ai</a>
+                    <a class="nav-link nav-link-bold" href="">Blog</a>
+                    <a class="nav-link nav-link-bold" href="">Gallery</a>
+                    <a class="nav-link nav-link-bold" href="team.html">Our Team</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <link rel="stylesheet" type="text/css" href="/css/page.css" />
     <style>
       .main-head {
         background: url("/assets/squid.png");

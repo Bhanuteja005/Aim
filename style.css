@@ -143,14 +143,18 @@ body {
   text-align: center;
   margin-bottom: 100px;
  }
+ #carouselExampleIndicators {
+  background: transparent;
+ 
+}
  .carousel-inner {
-  position: relative;
-  margin: 0 auto;
-  height: 60%;
-  width: 60%;
-  overflow: hidden; /* To hide the images that exceed the .carousel-inner dimensions */
- }
-
+  position: relative; margin: 0 auto; height: 50%; width: 50%; overflow: hidden;
+  margin-right: 25%; /* To hide the images that exceed the .carousel-inner dimensions */ }
+  
+   .carousel-inner img { /* You can adjust this value according to your preference */ }
+.carousel-item {
+  background: url(/assets/des3.png);
+}
  .box {
   width: 500px;
   height: 100px;
