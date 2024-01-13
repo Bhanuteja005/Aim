@@ -148,12 +148,12 @@ body {
  
 }
  .carousel-inner {
-  position: relative; margin: 0 auto; height: 50%; width: 50%; overflow: hidden;
-  margin-right: 25%; /* To hide the images that exceed the .carousel-inner dimensions */ }
-  
-   .carousel-inner img { /* You can adjust this value according to your preference */ }
-.carousel-item {
-  background: url(/assets/des3.png);
+  position: relative; margin: 0 auto; height: 65%; width: 65%; overflow: hidden; /* To hide the images that exceed the .carousel-inner dimensions */ }
+.carousel-control-next-icon {
+  margin-top: 210px;
+}
+.carousel-control-prev-icon {
+  margin-top: 210px;
 }
  .box {
   width: 500px;

@@ -1,0 +1,875 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AIM | About</title>
+        <link rel="shortcut icon" type="image/png" href="/assets/AIM.jfif">
+        <!-- Libraries that are common across all pages -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"></script>
+    
+        <!--Bootstrap: according to official website, these are cached -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <style>
+            body {
+                background: #040D12;
+            }
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  /* background: url(https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-bg.png) top center no-repeat; */
+  background-size: cover;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #012970;
+}
+
+.hero h2 {
+  color: #ffffffb9;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+}
+
+.hero .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.hero .btn-get-started span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.hero .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.hero .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
+.hero .hero-img {
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    padding: 120px 0 60px 0;
+  }
+  .hero .hero-img {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .hero .hero-img img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero h2 {
+    font-size: 24px;
+  }
+  .hero .hero-img img {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Index Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content {
+  background-color: #f6f9ff30;
+  padding: 40px;
+}
+
+.about h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.about h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primaryblue);
+}
+
+.about p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+}
+
+.about .btn-read-more {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+}
+
+.about .btn-read-more span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.about .btn-read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.about .btn-read-more:hover i {
+  transform: translateX(5px);
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .service-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.services .service-box .icon {
+  font-size: 36px;
+  padding: 40px 20px;
+  border-radius: 4px;
+  /* position: relative; */
+/* margin-bottom: 25px; */
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.services .service-box h3 {
+  color: #ffffffb9;
+  font-weight: 700;
+}
+
+.services .service-box .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
+.services .service-box .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.services .service-box.blue {
+  border-bottom: 3px solid #2db6fa;
+}
+
+.services .service-box.blue .icon {
+  color: #2db6fa;
+  background: #dbf3fe;
+}
+
+.services .service-box.blue .read-more {
+  color: #2db6fa;
+}
+
+.services .service-box.blue:hover {
+  background: #2db6fa;
+}
+
+.services .service-box.orange {
+  border-bottom: 3px solid #f68c09;
+}
+
+.services .service-box.orange .icon {
+  color: #f68c09;
+  background: #fde3c4;
+}
+
+.services .service-box.orange .read-more {
+  color: #f68c09;
+}
+
+.services .service-box.orange:hover {
+  background: #f68c09;
+}
+
+.services .service-box.green {
+  border-bottom: 3px solid #08da4e;
+}
+
+.services .service-box.green .icon {
+  color: #08da4e;
+  background: #cffddf;
+}
+
+.services .service-box.green .read-more {
+  color: #08da4e;
+}
+
+.services .service-box.green:hover {
+  background: #08da4e;
+}
+
+.services .service-box.red {
+  border-bottom: 3px solid #e9222c;
+}
+
+.services .service-box.red .icon {
+  color: #e9222c;
+  background: #fef7f8;
+}
+
+.services .service-box.red .read-more {
+  color: #e9222c;
+}
+
+.services .service-box.red:hover {
+  background: #e9222c;
+}
+
+.services .service-box.purple {
+  border-bottom: 3px solid #b50edf;
+}
+
+.services .service-box.purple .icon {
+  color: #b50edf;
+  background: #f8e4fd;
+}
+
+.services .service-box.purple .read-more {
+  color: #b50edf;
+}
+
+.services .service-box.purple:hover {
+  background: #b50edf;
+}
+
+.services .service-box.pink {
+  border-bottom: 3px solid #f51f9c;
+}
+
+.services .service-box.pink .icon {
+  color: #f51f9c;
+  background: #feecf7;
+}
+
+.services .service-box.pink .read-more {
+  color: #f51f9c;
+}
+
+.services .service-box.pink:hover {
+  background: #f51f9c;
+}
+
+.services .service-box:hover h3, .services .service-box:hover p, .services .service-box:hover .read-more {
+  color: #fff;
+}
+
+.services .service-box:hover .icon {
+  background: #fff;
+}
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+  background: #040D12;
+  padding: 60px 0;
+}
+
+.team .member {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.3s;
+  
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.team .member .member-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team-shape.svg) no-repeat center bottom;
+  background-size: contain;
+  margin-left: 500px;
+
+}
+
+.team .member .social {
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: rgba(1, 41, 112, 0.5);
+  margin: 15px 12px;
+  display: block;
+  line-height: 0;
+  text-align: center;
+}
+
+.team .member .social a:hover {
+  color: rgba(1, 41, 112, 0.8);
+}
+
+.team .member .social i {
+  font-size: 18px;
+}
+
+.team .member .member-info {
+  padding: 10px 15px 20px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #012970;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: #5e5e5e;
+}
+
+.team .member:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.team .member:hover .social {
+  right: 8px;
+  opacity: 1;
+}
+
+
+        </style>
+</head>
+<body>
+    <link rel="stylesheet" href="navbar.css">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/mlrit.png" height="57">
+        </a>
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="modal" data-target="#sideNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/blog.html">Blog</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our
+                        Events <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <div class="dropdown-triangle"></div>
+                        <div class="sublinks">
+                            <li>
+                                <a class="dropdown-item" href="immersive.html" >Immersive</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="squid.html" >Squid Game</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="" >Gen Ai</a>
+                            </li>
+                            <li class="img-list-item">
+                                <img src="/assets/participate.png" alt="this is a picture">
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="team.html">Our Team </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="modal fade right" tabindex="-1" role="dialog" id="sideNav">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: #fff;">AIM MLRIT</h5>
+                    <button type="button" id="close-modal" class="close float-right txt-dark" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="nav-link nav-link-bold" href="/index.html">Home</a>
+                    <a class="nav-link nav-link-bold" href="/about.html">About Us</a>
+                    <a class="nav-link nav-link-disabled" href="#" style="color: #084880;">Our Events ></a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Immersive</a>
+                    <a class="dropdown-item nav-sublink" href="squid.html" style="color: #fff;">Squid Game</a>
+                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Gen Ai</a>
+                    <a class="nav-link nav-link-bold" href="blog.html">Blog</a>
+                    <a class="nav-link nav-link-bold" href="gallery.html">Gallery</a>
+                    <a class="nav-link nav-link-bold" href="team.html">Our Team</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-3">
+        <section id="hero" class="hero d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center">
+                        <h1 data-aos="fade-up" style="color: #4154F1 !important;font-size:35px !important;">On its mission towards advancing the AI world, </h1>
+                        <h5 data-aos="fade-up" class="my-3" style="color: #fff !important;" data-aos-delay="400">provides excellent opportunities for start-ups, colleges, alumni, and corporates to engage with us.</h5>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <div class="text-center text-lg-start">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/startup-project-2975806-2476882.png"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <main id="main">
+            <section id="about" class="about">
+
+                <div class="container" data-aos="fade-up">
+                    <div class="row gx-0">
+
+                        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="content">
+                                <h3 style="font-size:25px !important;">Who We Are</h3>
+                                <p style="font-size:14px !important; color: #222831; " class="text-white">
+                                    Welcome to Aim Club at MLRIT College, where the future meets innovation! Aim, short for
+                                     Aspiring Intellectual Mindsets, is the dynamic AIML department club that explores the 
+                                     realms of artificial intelligence. In collaboration with Inlustroo Company, Aim Club 
+                                     pioneers cutting-edge projects and fosters a community of forward-thinkers. Our members
+                                      have harnessed their skills to develop a remarkable robot, showcasing the potential of AI
+                                       in the real world. Join us on this journey of discovery and advancement, where passion 
+                                       meets technology. Be part of Aim Club and embrace the limitless possibilities of AI. 
+                                       Together, we shape the future!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                            <img src="/assets/aim.jpg" class="img-fluid" height="350px" width="350px" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section id="services" class="services">
+
+                <div class="container" data-aos="fade-up">
+
+                    <header class="section-header">
+                        <p class="text-center my-5" style="color:#2DB6FA !important;font-size:25px !important;">What we
+                            Provide</p>
+                    </header>
+
+                    <div class="row gy-4 justify-content-center">
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-box blue">
+                                <h3>AI Workshops</h3>
+                                <p class="text-white" style="font-size:14px !important;">We conduct workshops and lectures regularly to promote awareness about artificial intelligence.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-box orange">
+                                <h3>Student AI Support</h3>
+                                <p class="text-white" style="font-size:14px !important;">We guide students with creative AI ideas, helping transform them into successful projects or companies.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="service-box green">
+                                <h3>AI Incubation</h3>
+                                <p class="text-white" style="font-size:14px !important;">Connect with us for the best AI incubation services and centers supported by our AI club.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="service-box red">
+                                <h3>AI Mentoring</h3>
+                                <p class="text-white" style="font-size:14px !important;">Providing mentorship through experienced individuals for students launching AI-related start-ups.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                            <div class="service-box purple">
+                                <h3>AI Collaboration</h3>
+                                <p class="text-white" style="font-size:14px !important;">We facilitate collaboration among students, whether in a traditional office or within virtual teams, to explore the vast realm of artificial intelligence.</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="team" class="team">
+
+                <div class="container py-4 pb-5" data-aos="fade-up">
+
+                    <header class="section-header w-100">
+                        <p style="color:#2DB6FA !important;" class="text-center my-3" >Our Mentor</p>
+                    </header>
+
+                    <div class="row gy-4">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" style="margin-left: 55px;" data-aos="fade-up" data-aos-delay="200">
+                            <div class="member">
+                                <div class="member-img">
+                                    <img src="https://mlrit.ac.in/wp-content/uploads/2023/07/1688724924587-2-scaled-e1688725244546.jpg"
+                                        style="width:300px !important; height:280px !important;" class="img-fluid"
+                                        alt="">
+                                </div>
+                                <div class="member-info">
+                                    <h4>Dr. J VIJAY GOPAL</h4>
+                                    <span>Associate Professor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </main>
+    </div>
+    <style>
+        :root {
+    --fb-col: linear-gradient(
+    to bottom,
+    #18affe,
+    #139ff7,
+    #1197f6,
+    #0b86ed,
+    #0476e6,
+    #0168e1,
+    #0064e0,
+    #0062e1,
+    #075cd9
+    );
+    --insta-col: linear-gradient(
+    to bottom left,
+    #405de6,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #f77737,
+    #fcaf45
+    );
+    --twit-col: #1da1f2;
+    --yt-col: #ff0000;
+    }
+    .push-upper {
+    padding-top: 10%;
+    }
+    
+    .push-bottom {
+    padding-bottom: 2%;
+    }
+    
+    .bg-blue {
+    background-color: #002240;
+    }
+    
+    .curvy-footer svg {
+    background-position: center;
+    background-size: cover;
+    }
+    
+    footer h3 {
+    color: #fff;
+    }
+    
+    footer a {
+    color: #a7d3ff;
+    }
+    
+    footer a:hover {
+    color: #a7fffd;
+    text-decoration: none;
+    }
+    
+    .fa-facebook:hover {
+    background: var(--fb-col);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
+    .fa-instagram:hover {
+    background: var(--insta-col);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
+    .fa-twitter:hover {
+    color: var(--twit-col);
+    }
+    
+    /* almost white color */
+    .footer-text {
+    color: rgb(255, 255, 255);
+    }
+    
+    </style>
+        <footer style="background: #000000;">
+            <div class="container-fluid  text-white push-bottom p-5">
+              <div class="container" id="footer-image">
+                  <div class="row text-left">
+                      <div class="col-12 col-md-3 push-upper text-left">
+                          <img class="img-responsivess" src="/assets/AIM.jfif" height="200px" width="200px" alt="AIM Logo" />
+                          <p class="mx-auto footer-text">
+                            2023.Aspiring Intellectual Mindsets of Maari Laxman Reddy Institiute of Technology,Hyderabad.
+                        </p>
+                      </div>
+          
+                      <div class="col-12 col-sm-6 col-md-3 push-upper">
+                          <h3>About</h3>
+                          <a class="d-block footer-text" href="">Our Team</a>
+                          <a class="d-block footer-text" href="">Gallery</a>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-3 push-upper">
+                          <h3>Events</h3>
+                          <a class="d-block footer-text" href="">Hackathons</a>
+                          <a class="d-block footer-text" href="">Bootcamps</a>
+                      </div>
+                      <div class="col-12 col-md-3 push-upper">
+                          <h3>Reach Us</h3>
+                          <span class="footer-text">AIM,MLRIT</span><br>
+                          <span class="footer-text">Dundigal,</span><br>
+                          <span class="footer-text">Hyderabad</span><br>
+                          <a href="tel:">xxxxxxxxx</a>, <a href="tel:">xxxxxxxxx</a><br>
+                          <a href="mailto:mlrit.ac.in">mlrit.ac.in</a>
+                      </div>
+                  </div>
+                  <div class="row social-links">
+                      <div class="col-12 text-center">
+                          <ul class="list-inline pt-3">
+                              <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-facebook"></i></h1></a></li>
+                              <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-instagram"></i></h1></a></li>
+                              <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-twitter"></i></h1></a></li>
+                              <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-github"></i></h1></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </footer>
+<script>
+    $(document).ready(init);
+
+function shouldManageDropdown() {
+    return window.innerWidth >= 1000;
+}
+
+function windowSizeAwareDropdownFn(fn) {
+    return function() {
+        if (!shouldManageDropdown()) return true;
+        fn();
+    };
+}
+
+function manageDropdowns() {
+    var dropdowns = document.querySelectorAll(
+            "#navbarSupportedContent ul li.dropdown"
+        ),
+        fadeInOutOptions = {
+            duration: 150
+        };
+
+    dropdowns.forEach(function(dropdown) {
+        var toggleBtn = dropdown.querySelector(".dropdown-toggle"),
+            dropdownMenu = dropdown.querySelector(".dropdown-menu"),
+            doNotFadeOutYet = true,
+            dropdownRemainAwakeTimeout = 50;
+
+        function fadeOutDropdown() {
+            if (doNotFadeOutYet) return;
+            $(dropdownMenu).slideUp(fadeInOutOptions);
+        }
+
+        $(toggleBtn).on(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+                $(dropdownMenu).slideDown(fadeInOutOptions);
+            })
+        );
+
+        $(toggleBtn).on(
+            "mouseover",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+            })
+        );
+
+        $(toggleBtn).on(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = false;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+            })
+        );
+
+        $(dropdownMenu).on(
+            "mouseenter",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = true;
+            })
+        );
+
+        $(dropdownMenu).on(
+            "mouseleave",
+            windowSizeAwareDropdownFn(function() {
+                doNotFadeOutYet = false;
+                setTimeout(fadeOutDropdown, dropdownRemainAwakeTimeout);
+            })
+        );
+    });
+}
+
+function manageCurves() {
+    /*
+     * if header is defined, then manage navbar curves on scroll otherwise just display them
+     *
+     * !IMPORTANT: i'm assuming that <header> will only be used to define the whole header image part
+     *              and nothing else in this whole website
+     */
+
+    let $navbar = $("#navbar");
+
+    if ($("header").length) {
+        $(document).on("scroll", function() {
+            if ($(document).scrollTop() > 25) {
+                $navbar.addClass("navbar-curves");
+            } else {
+                $navbar.removeClass("navbar-curves");
+            }
+        });
+    } else {
+        $navbar.addClass("navbar-curves");
+    }
+}
+
+function init() {
+    manageDropdowns();
+    manageCurves();
+}
+
+window.onresize = function() {
+    if ($(window).width() > 992) {
+        $("#sideNav").modal("hide");
+    }
+};
+
+</script>
+</body>
+</html>

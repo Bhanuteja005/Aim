@@ -25,7 +25,7 @@
 
     <style>
         body {
-            background: #040023;
+            background: #000;
         }
         h1 {
             font-size: 65px;
@@ -123,10 +123,9 @@
         }
     </style>
     </head>
-<body style="background-color: #000000;">
+<body>
 
     <link rel="stylesheet" href="navbar.css">
-    <script src="navbar.js"></script>
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
         <a class="navbar-brand" href="index.html">
             <img src="assets/mlrit.png" height="57">
@@ -138,13 +137,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">About Us</a>
+                    <a class="nav-link" href="/about.html">About Us</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Blog</a>
+                    <a class="nav-link" href="/blog.html">Blog</a>
                 </li>
                 <li class="nav-item dropdown ">
                     <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our
@@ -188,13 +187,13 @@
                 </div>
                 <div class="modal-body">
                     <a class="nav-link nav-link-bold" href="/">Home</a>
-                    <a class="nav-link nav-link-bold" href="/">About Us</a>
-                    <a class="nav-link nav-link-disabled" href="#" style="color: #084880;">Our Events ></a>
-                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Immersive</a>
+                    <a class="nav-link nav-link-bold" href="about.html">About Us</a>
+                    <a class="nav-link nav-link-disabled" href="" style="color: #084880;">Our Events ></a>
+                    <a class="dropdown-item nav-sublink" href="immersive.html" style="color: #fff;">Immersive</a>
                     <a class="dropdown-item nav-sublink" href="squid.html" style="color: #fff;">Squid Game</a>
                     <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Gen Ai</a>
-                    <a class="nav-link nav-link-bold" href="">Blog</a>
-                    <a class="nav-link nav-link-bold" href="">Gallery</a>
+                    <a class="nav-link nav-link-bold" href="blog.html">Blog</a>
+                    <a class="nav-link nav-link-bold" href="gallery.html">Gallery</a>
                     <a class="nav-link nav-link-bold" href="team.html">Our Team</a>
                 </div>
             </div>
@@ -204,13 +203,13 @@
     
 
       <div class="galleryFlex d-none" id="flexId" onclick="hideImgHolder();">
-        <div class="gallery-img-holder" id="galleryId" style="background-image: url(https://ecellrgpv.com/assets/img/gallery/1.jpg)">
+        <div class="gallery-img-holder" id="galleryId" >
         </div>
     </div>
-    <div class="container-contact100" style="background-color:#000000 !important;">
+    <div class="container-contact100" style="background-color:#0c0a0a !important;">
 
-        <div style="margin-top:100px;padding:50px 10%;text-align:center;color:#fff">
-            <h1>Gallery</h1>
+        <div style="margin-top:100px;padding:50px 10%;text-align:center;color:#ffffff">
+            <h1>Memories !</h1>
             <hr style="border: 1px solid #198CE6; opacity: 1; color: #198CE6; width: 10%; margin: auto;"/>
             <p class="text-white mt-5" style="font-size:16px !important;color:#fffa !important;"></p>
         </div>
@@ -293,16 +292,95 @@
         }
     
 </script>
-    <footer>
+<style>
+    :root {
+--fb-col: linear-gradient(
+to bottom,
+#18affe,
+#139ff7,
+#1197f6,
+#0b86ed,
+#0476e6,
+#0168e1,
+#0064e0,
+#0062e1,
+#075cd9
+);
+--insta-col: linear-gradient(
+to bottom left,
+#405de6,
+#833ab4,
+#c13584,
+#e1306c,
+#f77737,
+#fcaf45
+);
+--twit-col: #1da1f2;
+--yt-col: #ff0000;
+}
+.push-upper {
+padding-top: 10%;
+}
+
+.push-bottom {
+padding-bottom: 2%;
+}
+
+.bg-blue {
+background-color: #002240;
+}
+
+.curvy-footer svg {
+background-position: center;
+background-size: cover;
+}
+
+footer h3 {
+color: #fff;
+}
+
+footer a {
+color: #a7d3ff;
+}
+
+footer a:hover {
+color: #a7fffd;
+text-decoration: none;
+}
+
+.fa-facebook:hover {
+background: var(--fb-col);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.fa-instagram:hover {
+background: var(--insta-col);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.fa-twitter:hover {
+color: var(--twit-col);
+}
+
+/* almost white color */
+.footer-text {
+color: rgb(255, 255, 255);
+}
+
+</style>
+    <footer style="background: #000000;">
         <div class="container-fluid  text-white push-bottom p-5">
           <div class="container" id="footer-image">
               <div class="row text-left">
                   <div class="col-12 col-md-3 push-upper text-left">
-                      <img class="img-responsive" src="/assets/AIM.jfif" alt="AIM Logo" />
-      
+                      <img class="img-responsivess" src="/assets/AIM.jfif" height="200px" width="200px" alt="AIM Logo" />
                       <p class="mx-auto footer-text">
-                          Visit our blog : .>>>>>>>>>>>>>>>>>>>>
-                      </p>
+                        2023.Aspiring Intellectual Mindsets of Maari Laxman Reddy Institiute of Technology,Hyderabad.
+                    </p>
                   </div>
       
                   <div class="col-12 col-sm-6 col-md-3 push-upper">

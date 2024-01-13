@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>AIM MLRIT</title>
+        <title>AIM | Team</title>
         <link rel="shortcut icon" type="image/png" href="/assets/AIM.jfif">
         <!-- Libraries that are common across all pages -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111097251-1"></script>
@@ -38,13 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">About Us</a>
+                    <a class="nav-link" href="/about.html">About Us</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Blog</a>
+                    <a class="nav-link" href="/blog.html">Blog</a>
                 </li>
                 <li class="nav-item dropdown ">
                     <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our
@@ -87,14 +87,14 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <a class="nav-link nav-link-bold" href="/">Home</a>
-                    <a class="nav-link nav-link-bold" href="/">About Us</a>
+                    <a class="nav-link nav-link-bold" href="/index.html">Home</a>
+                    <a class="nav-link nav-link-bold" href="/about.html">About Us</a>
                     <a class="nav-link nav-link-disabled" href="#" style="color: #084880;">Our Events ></a>
-                    <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Immersive</a>
+                    <a class="dropdown-item nav-sublink" href="immersive.html" style="color: #fff;">Immersive</a>
                     <a class="dropdown-item nav-sublink" href="squid.html" style="color: #fff;">Squid Game</a>
                     <a class="dropdown-item nav-sublink" href="" style="color: #fff;">Gen Ai</a>
-                    <a class="nav-link nav-link-bold" href="">Blog</a>
-                    <a class="nav-link nav-link-bold" href="">Gallery</a>
+                    <a class="nav-link nav-link-bold" href="blog.html">Blog</a>
+                    <a class="nav-link nav-link-bold" href="gallery.html">Gallery</a>
                     <a class="nav-link nav-link-bold" href="team.html">Our Team</a>
                 </div>
             </div>
@@ -1181,48 +1181,128 @@
     $win.on("scroll load resize", throttle( checkScroll, 100));
     };
     </script>
-      <footer style="background-color: #000000;">
-      <div class="container-fluid  text-white push-bottom p-5">
-        <div class="container" id="footer-image">
-            <div class="row text-left">
-                <div class="col-12 col-md-3 push-upper text-left">
-                    <img class="img-responsive" src="/assets/AIM.jfif" alt="AIM Logo" />
+     <style>
+        :root {
+    --fb-col: linear-gradient(
+    to bottom,
+    #18affe,
+    #139ff7,
+    #1197f6,
+    #0b86ed,
+    #0476e6,
+    #0168e1,
+    #0064e0,
+    #0062e1,
+    #075cd9
+    );
+    --insta-col: linear-gradient(
+    to bottom left,
+    #405de6,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #f77737,
+    #fcaf45
+    );
+    --twit-col: #1da1f2;
+    --yt-col: #ff0000;
+    }
+    .push-upper {
+    padding-top: 10%;
+    }
     
-                    <p class="mx-auto footer-text">
-                        Visit our blog : .>>>>>>>>>>>>>>>>>>>>
-                    </p>
-                </div>
+    .push-bottom {
+    padding-bottom: 2%;
+    }
     
-                <div class="col-12 col-sm-6 col-md-3 push-upper">
-                    <h3>About</h3>
-                    <a class="d-block footer-text" href="">Our Team</a>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 push-upper">
-                    <h3>Events</h3>
-                    <a class="d-block footer-text" href="">Hackathons</a>
-                    <a class="d-block footer-text" href="">Bootcamps</a>
-                </div>
-                <div class="col-12 col-md-3 push-upper">
-                    <h3>Reach Us</h3>
-                    <span class="footer-text">AIM,MLRIT</span><br>
-                    <span class="footer-text">Dundigal,</span><br>
-                    <span class="footer-text">Hyderabad</span><br>
-                    <a href="tel:">xxxxxxxxx</a>, <a href="tel:">xxxxxxxxx</a><br>
-                    <a href="mailto:mlrit.ac.in">mlrit.ac.in</a>
-                </div>
-            </div>
-            <div class="row social-links">
-                <div class="col-12 text-center">
-                    <ul class="list-inline pt-3">
-                        <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-facebook"></i></h1></a></li>
-                        <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-instagram"></i></h1></a></li>
-                        <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-twitter"></i></h1></a></li>
-                        <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-github"></i></h1></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    .bg-blue {
+    background-color: #002240;
+    }
+    
+    .curvy-footer svg {
+    background-position: center;
+    background-size: cover;
+    }
+    
+    footer h3 {
+    color: #fff;
+    }
+    
+    footer a {
+    color: #a7d3ff;
+    }
+    
+    footer a:hover {
+    color: #a7fffd;
+    text-decoration: none;
+    }
+    
+    .fa-facebook:hover {
+    background: var(--fb-col);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
+    .fa-instagram:hover {
+    background: var(--insta-col);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    
+    .fa-twitter:hover {
+    color: var(--twit-col);
+    }
+    
+    /* almost white color */
+    .footer-text {
+    color: rgb(255, 255, 255);
+    }
+    
+    </style>
+        <footer style="background: #000000;">
+            <div class="container-fluid  text-white push-bottom p-5">
+              <div class="container" id="footer-image">
+                  <div class="row text-left">
+                      <div class="col-12 col-md-3 push-upper text-left">
+                          <img class="img-responsivess" src="/assets/AIM.jfif" height="200px" width="200px" alt="AIM Logo" />
+                          <p class="mx-auto footer-text">
+                            2023.Aspiring Intellectual Mindsets of Maari Laxman Reddy Institiute of Technology,Hyderabad.
+                        </p>
+                      </div>
+          
+                      <div class="col-12 col-sm-6 col-md-3 push-upper">
+                          <h3>About</h3>
+                          <a class="d-block footer-text" href="">Our Team</a>
+                          <a class="d-block footer-text" href="">Gallery</a>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-3 push-upper">
+                          <h3>Events</h3>
+                          <a class="d-block footer-text" href="">Hackathons</a>
+                          <a class="d-block footer-text" href="">Bootcamps</a>
+                      </div>
+                      <div class="col-12 col-md-3 push-upper">
+                          <h3>Reach Us</h3>
+                          <span class="footer-text">AIM,MLRIT</span><br>
+                          <span class="footer-text">Dundigal,</span><br>
+                          <span class="footer-text">Hyderabad</span><br>
+                          <a href="tel:">xxxxxxxxx</a>, <a href="tel:">xxxxxxxxx</a><br>
+                          <a href="mailto:mlrit.ac.in">mlrit.ac.in</a>
+                      </div>
+                  </div>
+                  <div class="row social-links">
+                      <div class="col-12 text-center">
+                          <ul class="list-inline pt-3">
+                              <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-facebook"></i></h1></a></li>
+                              <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-instagram"></i></h1></a></li>
+                              <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-twitter"></i></h1></a></li>
+                              <li class="list-inline-item p-2"><a href="" target="_blank"><h1><i class="fab fa-github"></i></h1></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
     </footer>
     <script>
         $(document).ready(init);
