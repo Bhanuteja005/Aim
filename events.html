@@ -23,54 +23,169 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <style>
-        .blogimg1 {
+        .baby {
+            margin-bottom: 20px;
+        }
+        .events {
+            text-align: center;
+        }
 
-            background-image: url(assets/6.png);
+        .para {
+            color: gray;
+        }
+        .img10 {
+            width: 465px;
+            height: 202px;
+            margin-left: 3%;
+            margin-top: 25px;
+            background-color:#19338F;
+            border-radius: 25px;
+            display: inline-block;
+        }
+        .img101{
+            width: 150px;
+            height: 150px;
+            margin-top: 27px;
+            margin-left: -30px;
+            border-radius: 20px;
+            background-color: #F1F1F1;
+            display: inline-block;
+        }
+
+        .img8 {
+            width: 113px;
+            height: 177px;
+            left: 55px;
+            margin-left: 55px;
             margin-top: 20px;
-            background-size: cover;
-            height: 600px;
-            background-repeat: no-repeat;
         }
-        .rect1{
-            width: 1148px;
-            height: 489px;
-            background-color: #506399BF;
-            margin-top: 60px;
-            margin-left: 45px;
-            align-items: center;
-            position: absolute;
-            border-radius: 10px;
-        }
-        .rect1 h1 {
-            color: #101010;
-             position: absolute;
-             font-size: 50px;
-            left: 43%;
-        }
-        .blogimg2 {
-            background-image: url(assets/12.png);
-            background-size: cover;
-            height: 600px;
-            background-repeat: no-repeat;;
-        }
-        .rect2{
-            width: 1148px;
-            height: 489px;
-            background-color:  #4D4C4CD9;
+
+        .img9 {
+            width: 6px;
+            height: 301px;
+            margin-left: 620px;
+            background-color:#8B0008;
+            border-radius: 20px;
 ;
-            margin-top: 60px;
-            margin-left: 45px;
-            align-items: center;
-            position: absolute;
-            border-radius: 10px;
         }
-        .rect2 p{
+
+        .img81 {
+            width: 113px;
+            height: 177px;
+            left: 55px;
+            margin-left: 285px;
+            display: inline-block;
+        }
+        .img81-11{
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .img91 {
+            width: 6px;
+            height: 201px;
+            margin-left: 620px;
+            background-color: #8B0008;
+            border-radius: 20px; 
+            margin-bottom: 10px;   
+        }
+
+        .img11 {
+
+            width: 465px;
+            height: 202px;
+            margin-left: 330px;
+            background-color: #19338F;
+            border-radius: 20px;
+            display: inline-block;
+
+        }
+        .img111{
+            width: 150px;
+            height: 150px;
+            margin-left: 350px;
+            margin-right: -20px;
+            margin-top: 27px;
+            border-radius: 20px;
+            background-color: #F1F1F1;
+            display: inline-block;
+        }
+
+        .rec1 {
+            margin-left: 115px;
+            width: 1005px;
+            height: 686px;
+            background: black;
+            border-radius: 3%;
+        }
+
+        .rec2 {
+            width: 805px;
+            height: 586px;
+            background: black;
+            text-align: center;
+            margin-left: 90px;
+            margin-top: 0px;
+        }
+
+        .rec2-h1 {
+            margin-left: 330px;
+            font-size: 24px;
+            background: white;
+            width: 170px;
+            height: 30px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 3px;
+            font-weight: bold;
+            border-radius: 2px;
+        }
+
+        .rec2-h2 {
+            margin-left: 2px;
+            margin-top: 10px;
+            font-size: 24px;
+            color: greenyellow;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 46px;
+        }
+
+        .rec2-p1 {
+            margin: 0 60px 60px;
+            font-size: 25px;
             color: white;
-            font-size: 35px;
-            margin-left: 5%;
-            margin-top: 8%;
+            line-height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        
+
+        .rec2-p2 {
+            margin: 0 60px 60px;
+            font-size: 25px;
+            color: white;
+            line-height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .rec-but {
+            margin-left: 40px;
+            width: 200px;
+            height: 40px;
+            background: #1783E3;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+
+        .rec-but:hover {
+            opacity: 0.7;
+            color: white;
+            transition: ease-in-out 0.15s;
+            text-decoration: solid;
+        }
     </style>
 </head>
 <body>
@@ -95,7 +210,7 @@
                     <a class="nav-link" href="/blog.html">Blog</a>
                 </li>
                 <li class="nav-item dropdown ">
-                    <a href="events.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our
                         Events <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <div class="dropdown-triangle"></div>
@@ -148,20 +263,41 @@
             </div>
         </div>
     </div>
-    <div class="blogimg1">
-        <div class="rect1">
-            <h1>Projects</h1>
+    <div class="Baby">
+        <div class="events">
+            <h1 class="h">OUR EVENTS 2021-22</h1>
+            <p class="para">Some of the events conducted by AIM CLUB</p>
         </div>
-    </div>
-    
-    <div class="blogimg2">
-        <div class="rect2">
-            <p>Research Paper</p>
-            <p>Patents</p>
-            <p>Publications</p>
+        <div class="img10-101">
+            <div class="img10">
+                <div class="img101"></div> </div>
+                <img class="img8" src="assets/8.png" alt="8"><br>
+        
         </div>
+        <div class="img9"></div>
+        <div class="img81-11">
+            <div class="img81">
+                <img class="img81" src="assets/81.png" alt="8"></div>
+            
+            <div class="img11">
+                <div class="img111"></div> </div>
+        </div>
+        <div class="img91"></div>
     </div>
+    <div class="rec1">
+        <div class="rec2">
+            <br><br>
 
+            <h1 class="rec2-h1">AIM CLUB</h1>
+            <h2 class="rec2-h2">GENAi VERSE</h2>
+            <p class="rec2-p1">Dive into an amazing experience where you'll unravel the secrets behind AI-generated
+                wonders. Learn to use these tools in your daily life and work. Let's explore AI together and uncover its
+                endless possibilities!</p>
+            <p class="rec2-p2">Want to join our event at GENAi VERSE 2023 , Click Below</p>
+            <button class="rec-but">GenAi VERSE 2023</button>
+
+        </div>
+    </div>
 
     <style>
         :root {
